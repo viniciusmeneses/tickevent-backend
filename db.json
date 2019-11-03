@@ -1,16 +1,62 @@
 {
-  "posts":[
+  "categories": [
     {
-      "id" : 0,
-      "title": "First post!",
-      "content" : "My first content!"
+      "id": 1,
+      "name": "Tecnologia"
     }
   ],
-  "comments" : [
+  "events": [
     {
-      "id": 0,
-      "content": "Wow such content!",
-      "username": "zero_cool"
+      "categoryId": 1,
+      "endDate": "2020-08-27T18:00:00.000-03:00",
+      "id": 1,
+      "location": {
+        "address": "Xxx",
+        "city": "São Paulo",
+        "complement": "Sala A",
+        "district": "Xxzz",
+        "number": "300",
+        "state": "SP",
+        "zipcode": "13187-260",
+        "latitude": -22.88891,
+        "longitude": -47.2222
+      },
+      "name": "AWS Summit 2020",
+      "organizerId": 1,
+      "ticketPrice": 20,
+      "startDate": "2020-08-27T10:00:00.000-03:00",
+      "imageUrl": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2017/11/15/AWSSummits_071711.png",
+      "featured": true
+    }
+  ],
+  "organizers": [
+    {
+      "id": 1,
+      "name": "Amazon.com, Inc."
+    }
+  ],
+  "tickets": [
+    {
+      "buyDate": "2019-10-30T19:28:35-3:00",
+      "paidValue": 20,
+      "eventId": 1,
+      "id": 1,
+      "userId": 1
+    }
+  ],
+  "favorites": [
+    {
+      "eventId": 1,
+      "id": 1,
+      "userId": 1
+    }
+  ],
+  "users": [
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$.BTJtjgVA6j1H8WvkRzg/.HdYD9JuVkb9Ul9WjNLUMBtAkxosEGpG",
+      "name": "Vinicius",
+      "id": 1
     }
   ]
 }
