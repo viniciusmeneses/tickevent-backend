@@ -42,15 +42,16 @@
       "eventId": 1,
       "id": 1,
       "userId": 1
-    }
-  ],
-  "favorites": [
+    },
     {
+      "userId": 1,
       "eventId": 1,
-      "id": 1,
-      "userId": 1
+      "paidValue": 20,
+      "buyDate": "2019-11-03T20:20:49.742-02:00",
+      "id": 2
     }
   ],
+  "favorites": [],
   "users": [
     {
       "email": "test@gmail.com",
