@@ -3,60 +3,127 @@
     {
       "id": 1,
       "name": "Tecnologia"
+    },
+    {
+      "id": 2,
+      "name": "Marketing"
     }
   ],
   "events": [
     {
-      "categoryId": 1,
-      "endDate": "2020-08-27T18:00:00.000-03:00",
       "id": 1,
-      "location": {
-        "address": "Xxx",
-        "city": "São Paulo",
-        "complement": "Sala A",
-        "district": "Xxzz",
-        "number": "300",
-        "state": "SP",
-        "zipcode": "13187-260",
-        "latitude": -22.88891,
-        "longitude": -47.2222
-      },
-      "name": "AWS Summit 2020",
+      "categoryId": 1,
       "organizerId": 1,
+      "name": "AWS Summit 2020",
+      "location": {
+        "address": "Av. Dr. Mário Vilas Boas Rodrigues",
+        "city": "São Paulo",
+        "complement": "",
+        "district": "Santo Amaro",
+        "number": "387",
+        "state": "SP",
+        "zipcode": "04757-020",
+        "latitude": -23.65016,
+        "longitude": -46.71889
+      },
       "ticketPrice": 20,
       "startDate": "2020-08-27T10:00:00.000-03:00",
-      "imageUrl": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2017/11/15/AWSSummits_071711.png",
-      "featured": true
+      "endDate": "2020-08-27T18:00:00.000-03:00",
+      "featured": true,
+      "imageUrl": "https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2017/11/15/AWSSummits_071711.png"
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "organizerId": 2,
+      "name": "DevCamp 2020",
+      "location": {
+        "address": "Av. Guilherme Campos",
+        "city": "Campinas",
+        "complement": "",
+        "district": "Jd. Santa Genebra",
+        "number": "500",
+        "state": "SP",
+        "zipcode": "13087-901",
+        "latitude": -22.85462,
+        "longitude": -47.057411
+      },
+      "ticketPrice": 69.99,
+      "startDate": "2020-08-16T09:30:00.000-03:00",
+      "endDate": "2020-08-17T17:00:00.000-03:00",
+      "featured": true,
+      "imageUrl": "https://pbs.twimg.com/profile_images/1029812404992057347/AsQeypPx_400x400.jpg"
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "organizerId": 3,
+      "name": "#TheDevConf 2019",
+      "location": {
+        "address": "Rua Orfanotrófio",
+        "city": "Porto Alegre",
+        "complement": "Zona Sul",
+        "district": "Teresópolis",
+        "number": "555",
+        "state": "RS",
+        "zipcode": "90840-440",
+        "latitude": -30.08051,
+        "longitude": -51.21898
+      },
+      "ticketPrice": 90.59,
+      "startDate": "2019-11-27T09:30:00.000-03:00",
+      "endDate": "2019-11-30T17:00:00.000-03:00",
+      "featured": false,
+      "imageUrl": "https://s3-sa-east-1.amazonaws.com/thedevconf/2019/img/banners/tdc2019poa-savethedate.jpg"
+    },
+    {
+      "id": 4,
+      "categoryId": 2,
+      "organizerId": 4,
+      "name": "RD Summit 2019",
+      "location": {
+        "address": "Av. Gov. Gustavo Richard",
+        "city": "Florianópolis",
+        "complement": "",
+        "district": "Centro",
+        "number": "850",
+        "state": "SC",
+        "zipcode": "88010-290",
+        "latitude": -27.602980,
+        "longitude": -48.549680
+      },
+      "ticketPrice": 94.00,
+      "startDate": "2019-11-06T09:15:00.000-03:00",
+      "endDate": "2019-11-08T18:15:00.000-03:00",
+      "featured": false,
+      "imageUrl": "https://rdsummit.com.br/img/open-graph/open-graph.png"
     }
   ],
   "organizers": [
     {
       "id": 1,
       "name": "Amazon.com, Inc."
-    }
-  ],
-  "tickets": [
-    {
-      "buyDate": "2019-10-30T19:28:35-3:00",
-      "paidValue": 20,
-      "eventId": 1,
-      "id": 1,
-      "userId": 1
     },
     {
-      "userId": 1,
-      "eventId": 1,
-      "paidValue": 20,
-      "buyDate": "2019-11-03T20:20:49.742-02:00",
-      "id": 2
+      "id": 2,
+      "name": "Dextra"
+    },
+    {
+      "id": 3,
+      "name": "Globalcode"
+    },
+    {
+      "id": 4,
+      "name": "ResultadosDigitais"
     }
   ],
+  "tickets": [],
   "favorites": [],
   "users": [
     {
-      "email": "test@gmail.com",
+      "email": "teste@gmail.com",
       "password": "$2a$10$.BTJtjgVA6j1H8WvkRzg/.HdYD9JuVkb9Ul9WjNLUMBtAkxosEGpG",
-      "name": "Vinicius",
+      "name": "Teste",
       "id": 1
     }
   ]
