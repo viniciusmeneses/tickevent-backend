@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         echo '--> Instalando dependencias do projeto'
-        bat(script: 'npm install', returnStdout: true)
+        bat(script: 'npm install', returnStdout: true, encoding: 'UTF-8')
         echo '--> Compilando projeto'
         bat(script: 'npm run build', returnStdout: true)
         sleep 5
