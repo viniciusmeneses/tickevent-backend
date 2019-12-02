@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "nodemon server.js",
-    "build": "babel server.js -d dist"
+    "build": "babel server.js -d dist",
+    "lint": "eslint ."
   },
   "dependencies": {
     "json-server": "^0.12.1",
