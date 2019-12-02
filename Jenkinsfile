@@ -3,24 +3,26 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo '--> Instalando dependências do projeto'
-        bat 'npm install'
+        echo '--> Instalando dependÃªncias do projeto'
+        bat(script: 'npm install', returnStatus: true, returnStdout: true)
         echo '--> Compilando projeto'
-        bat 'npm run build'
+        bat(script: 'npm run build', returnStatus: true, returnStdout: true)
+        sleep 5
       }
     }
 
     stage('Test') {
       steps {
-        echo '--> Verificando problemas de sintaxe no código'
-        bat 'npm run lint'
+        echo '--> Verificando problemas de sintaxe no cÃ³digo'
+        bat(script: 'npm run lint', returnStatus: true, returnStdout: true)
+        sleep 5
       }
     }
 
     stage('Deploy') {
       steps {
-        input 'Realizar deploy no ambiente de produção?'
-        bat 'git push heroku jenkins:master'
+        input 'Realizar deploy no ambiente de produÃ§Ã£o?'
+        bat(script: 'git push heroku jenkins:master', returnStatus: true, returnStdout: true)
       }
     }
 
