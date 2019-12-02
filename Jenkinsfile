@@ -6,14 +6,14 @@ pipeline {
         echo '--> Instalando dependencias do projeto'
         bat(script: 'npm install', returnStdout: true, encoding: 'UTF-8')
         echo '--> Compilando projeto'
-        bat(script: 'npm run build', returnStdout: true)
+        bat(script: 'npm run build', encoding: 'UTF-8')
         sleep 5
       }
     }
 
     stage('Test') {
       steps {
-        echo '--> Verificando problemas de sintaxe no código'
+        echo '--> Verificando problemas de sintaxe no codigo'
         bat(script: 'npm run lint', returnStatus: true, returnStdout: true)
         sleep 5
       }
