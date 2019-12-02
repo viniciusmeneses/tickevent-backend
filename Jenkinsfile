@@ -3,10 +3,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo '--> Instalando dependências do projeto'
-        bat(script: 'npm install', returnStatus: true, returnStdout: true)
+        echo '--> Instalando dependencias do projeto'
+        bat(script: 'npm install', returnStdout: true)
         echo '--> Compilando projeto'
-        bat(script: 'npm run build', returnStatus: true, returnStdout: true)
+        bat(script: 'npm run build', returnStdout: true)
         sleep 5
       }
     }
@@ -21,7 +21,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        input 'Realizar deploy no ambiente de produção?'
+        input 'Realizar deploy no ambiente de producao?'
         bat(script: 'git push heroku jenkins:master', returnStatus: true, returnStdout: true)
       }
     }
